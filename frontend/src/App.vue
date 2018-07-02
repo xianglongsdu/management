@@ -2,7 +2,7 @@
   <div id="app">
     <el-container>
       <el-aside width="200px">
-        <el-menu background-color="#545C64" text-color="#FFF" active-text-color="#FFD04B" style="height: 100%;">
+        <el-menu background-color="#545C64" text-color="#FFF" active-text-color="#FFD04B" router="true" style="height: 100%;">
           <el-submenu index="1">
             <template slot="title"><i class="el-icon-setting"></i><span>合同管理</span></template>
               <el-menu-item-group>
@@ -34,7 +34,7 @@
           </el-dropdown>
         </el-header>
         <el-main>
-
+          <router-view></router-view>
         </el-main>
       </el-container>
     </el-container>
